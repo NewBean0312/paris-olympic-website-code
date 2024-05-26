@@ -1,0 +1,17 @@
+@import "../assets/color.scss";
+
+$max-width: 1132px;
+
+.container {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.cfixed::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
