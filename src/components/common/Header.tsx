@@ -1,6 +1,4 @@
 import React from "react";
-import "../../styles/Main.scss";
-import "../../styles/Header.scss";
 import { GnbType } from "../../model/types";
 
 // Gnb list data

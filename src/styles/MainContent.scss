@@ -1,0 +1,13 @@
+@import "../assets/color.scss";
+
+$max-width: 1132px;
+
+// slider css
+.slider {
+  img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}

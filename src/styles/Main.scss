@@ -8,10 +8,9 @@ $max-width: 1132px;
   margin: 0 auto;
 }
 
-.cfixed::after {
+.cfixed::after{
   content: "";
   display: block;
   clear: both;
 }
-
 
