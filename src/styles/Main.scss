@@ -6,11 +6,54 @@ $max-width: 1132px;
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 2px solid $sub-color;
 }
 
-.cfixed::after{
+.cfixed::after,
+.container::after {
   content: "";
   display: block;
   clear: both;
 }
 
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.sec-tit {
+  font-size: 42px;
+  color: $main-color;
+  font-weight: normal;
+}
+
+.divider {
+  width: 90%;
+  min-width: $max-width;
+  margin: 0 auto;
+  margin-top: 77px;
+  background-color: #eee;
+}
+
+.m-divider {
+  width: 20px;
+  margin: 0 auto;
+  margin-top: 77px;
+  background-color: $main-color;
+}
+
+// 태블릿용 css
+@media all and (min-width: 768px) {
+  .divider {
+    margin-top: 124px;
+  }
+
+  .m-divider {
+    margin-top: 124px;
+  }
+}

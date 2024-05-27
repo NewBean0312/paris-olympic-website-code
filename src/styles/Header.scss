@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   padding: 18px 5%;
+  border-bottom: 5px solid $sub-color;
 
   .logo {
     display: flex;
@@ -20,7 +21,7 @@
     a {
       font-size: 26px;
       color: $main-color;
-      font-weight: normal;
+      font-weight: bold;
     }
   }
 

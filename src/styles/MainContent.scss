@@ -11,3 +11,27 @@ $max-width: 1132px;
     height: auto;
   }
 }
+
+// display css
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+
+  .sec-tit {
+    margin-bottom: 30px;
+  }
+
+  .desc {
+    font-family: "PT Serif";
+    color: $text-color;
+    line-height: 1.9;
+    word-break: keep-all;
+  }
+}
+
+@media all and (min-width: 768px) {
+  // display css
+  .display-section {
+    margin-top: 95px;
+  }
+}
