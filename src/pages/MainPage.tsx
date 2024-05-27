@@ -6,6 +6,7 @@ import Display from "../components/Display";
 import "../styles/Main.scss";
 import "../styles/Header.scss";
 import "../styles/MainContent.scss";
+import Promotion from "../components/Promotion";
 
 const MainPage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage: React.FC = () => {
       <Slider />
       <div className="content">
         <Display />
+        <Promotion />
       </div>
     </>
   );

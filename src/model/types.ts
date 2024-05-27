@@ -8,7 +8,7 @@ export type GnbType = {
 
 export type PromotionType = {
   list: {
-    icon: IconProp;
+    imgUrl: string;
     name: string;
     content: string;
   }[];
