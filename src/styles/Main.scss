@@ -6,8 +6,6 @@ $max-width: 1132px;
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
-  padding: 10px 0;
-  border-bottom: 2px solid $sub-color;
 }
 
 .cfixed::after,
@@ -28,16 +26,17 @@ $max-width: 1132px;
 
 .sec-tit {
   font-size: 42px;
-  color: $main-color;
+  color: $sub-color;
   font-weight: normal;
 }
 
 .divider {
   width: 90%;
-  min-width: $max-width;
+  max-width: $max-width;
   margin: 0 auto;
   margin-top: 77px;
-  background-color: #eee;
+  height: 5px;
+  background-color: $main-color;
 }
 
 .m-divider {

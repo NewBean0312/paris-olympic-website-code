@@ -1,5 +1,3 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
 export type GnbType = {
   list: {
     name: string;
@@ -8,8 +6,15 @@ export type GnbType = {
 
 export type PromotionType = {
   list: {
-    imgUrl: string;
+    imgSrc: string;
     name: string;
     content: string;
+  }[];
+};
+
+export type EventType = {
+  list: {
+    name: string;
+    imgSrc: string;
   }[];
 };

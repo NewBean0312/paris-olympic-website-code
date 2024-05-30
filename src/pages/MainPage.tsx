@@ -7,6 +7,7 @@ import "../styles/Main.scss";
 import "../styles/Header.scss";
 import "../styles/MainContent.scss";
 import Promotion from "../components/Promotion";
+import Event from "../components/Event";
 
 const MainPage: React.FC = () => {
   return (
@@ -16,6 +17,8 @@ const MainPage: React.FC = () => {
       <div className="content">
         <Display />
         <Promotion />
+        <hr className="divider" />
+        <Event />
       </div>
     </>
   );
