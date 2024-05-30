@@ -18,3 +18,12 @@ export type EventType = {
     imgSrc: string;
   }[];
 };
+
+export type NewsType = {
+  list: {
+    no: string;
+    dateTime: string;
+    dateTime2: string;
+    title: string;
+  }[];
+}

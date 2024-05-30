@@ -89,7 +89,7 @@ $max-width: 1132px;
   }
 
   .event-list {
-    padding: 0 50px;
+    margin: 0 150px;
     height: 1020px;
     overflow-y: auto;
     li {
@@ -121,6 +121,7 @@ $max-width: 1132px;
             font-size: 35px;
             color: #fff;
             font-weight: bold;
+            word-break: keep-all;
           }
 
           div {
@@ -167,6 +168,47 @@ $max-width: 1132px;
   }
 }
 
+// news css
+.news-section {
+  margin-top: 77px;
+
+  .sec-tit {
+    margin-bottom: 47px;
+    text-align: center;
+  }
+
+  .news-list {
+    li {
+      width: 100%;
+      margin-top: 45px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      time {
+        display: block;
+        margin: 11px 0 10px 0;
+        font-size: 11px;
+        color: #9e9e9e;
+      }
+
+      h3 {
+        font-weight: normal;
+        color: #424242;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
 @media all and (min-width: 768px) {
   // display css
   .display-section {
@@ -180,13 +222,19 @@ $max-width: 1132px;
     .promo-list {
       li {
         float: left;
-        width: 23.046875%; // 177px ÷ 768px
+        width: 48.046875%; // 177px ÷ 768px
         margin-left: 2.604167%; // 20px ÷ 768px
         margin-top: 0;
 
-        &:first-child {
+        &:not(:nth-child(2n)) {
           margin-left: 0;
         }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-top: 2.604167%; // 20px ÷ 768px
+        }
+
       }
     }
   }
@@ -200,6 +248,7 @@ $max-width: 1132px;
     }
 
     .event-list {
+      margin: 0 50px;
       li {
         float: left;
         width: 50%;
@@ -212,6 +261,28 @@ $max-width: 1132px;
           .pictogram {
             transform: translateY(37px);
           }
+        }
+      }
+    }
+  }
+
+  // news css
+  .news-section {
+    margin-top: 124px;
+
+    .sec-tit {
+      margin-bottom: 76px;
+    }
+
+    .news-list {
+      li {
+        float: left;
+        width: 31.597222%; // 242.666667px ÷ 768px
+        margin-left: 2.604167%; // 20px ÷ 768px
+        margin-top: 0;
+
+        &:first-child {
+          margin-left: 0;
         }
       }
     }
@@ -278,6 +349,24 @@ $max-width: 1132px;
     .event-list {
       li {
         width: 25%;
+      }
+    }
+  }
+
+  // news css
+  .news-section {
+    .sec-tit {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    .news-list {
+      float: right;
+      width: 74.558304%; // 844px ÷ 1132px
+
+      li {
+        width: 31.753555%; // 268px ÷ 844px 
+        margin-left: 2.369669%; // 20px ÷ 844px 
       }
     }
   }
