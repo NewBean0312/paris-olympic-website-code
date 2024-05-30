@@ -46,6 +46,24 @@ $max-width: 1132px;
   background-color: $main-color;
 }
 
+// footer css
+.footer {
+  margin-top: 104px;
+
+  iframe {
+    width: 100%;
+    height: 320px;
+  }
+
+  p {
+    padding: 21px 0;
+    border-top: 5px solid $main-color;
+    border-bottom: 5px solid $main-color;
+    color: $main-color;
+    text-align: center;
+  }
+}
+
 // 태블릿용 css
 @media all and (min-width: 768px) {
   .divider {
@@ -54,5 +72,16 @@ $max-width: 1132px;
 
   .m-divider {
     margin-top: 124px;
+  }
+
+  // footer css
+  .footer {
+    iframe {
+      height: 432px;
+    }
+
+    p {
+      padding: 34px 0;
+    }
   }
 }
