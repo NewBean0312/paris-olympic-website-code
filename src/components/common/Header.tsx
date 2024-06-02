@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GnbType } from "../../model/types";
 
 // Gnb list data
@@ -13,6 +13,12 @@ let gnbData: GnbType = {
 };
 
 const Header: React.FC = () => {
+  const [isGnbVisible, setIsGnbVisible] = useState(false);
+
+  const toggleGnbVisibility = () => {
+    setIsGnbVisible((prevState) => !prevState);
+  }
+
   return (
     <header className="header cfixed">
       <h1 className="logo">
@@ -21,7 +27,7 @@ const Header: React.FC = () => {
       </h1>
       <div></div>
       <nav>
-        <ul className="gnb">
+        <ul className={`gnb ${isGnbVisible ? "visible" : "hidden"}`}>
           {gnbData.list.map((item, index) => (
             <li key={index}>
               <a href="#none">{item.name}</a>
@@ -29,7 +35,7 @@ const Header: React.FC = () => {
           ))}
         </ul>
       </nav>
-      <span className="menu-toggle-btn">
+      <span className="menu-toggle-btn" onClick={toggleGnbVisibility}>
         <span></span>
         <span></span>
         <span></span>

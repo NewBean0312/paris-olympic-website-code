@@ -36,14 +36,24 @@
     left: 0;
     width: 100%;
     background-color: $main-color;
+    transition: transform 0.5s;
+
+    &.visible {
+      display: block;
+    }
+
+    &.hidden {
+      display: none;
+    }
 
     li {
-      border-bottom: 1px solid $main-color;
+      border-bottom: 1px solid #fff;
 
       a {
         display: block;
         padding: 14px 0 14px 5%;
         font-size: 14px;
+        font-weight: bold;
         color: #fff;
       }
     }
